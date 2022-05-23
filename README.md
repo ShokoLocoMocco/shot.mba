@@ -1,2 +1,2 @@
-# shot.mba
+# SHOkolatte Tachikawa, MBA
 portfolio
