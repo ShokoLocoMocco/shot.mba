@@ -37,6 +37,7 @@ font-family: 'Russo One', sans-serif;
   --color-yellow: #FFDA62;
   --color-lightblue: #556DA3;
   --color-blue: #497480;
+  --color-wht-alpha: rgba(255, 255, 255, 0.7);
 }
 
 
@@ -59,7 +60,6 @@ body::before {
   right: 0;
   height: 100%;
   z-index: -1;
-  background: var(--color-darkblue);
   background: url(img/florida_op-cropped-op.png) top right no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@ a {
 
 h1 {
   font-size: 48px;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-wht-alpha);
 }
 
 h1 span {
@@ -106,7 +106,7 @@ h1 span {
 }
 
 h2 {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-wht-alpha);
   font-weight: 600;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -125,6 +125,13 @@ nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+nav > ul a {
+  color: var(--color-wht-alpha);
+}
+
+nav > ul a:hover {
+  color: var(--color-bg-blue);
 }
 
 /* nav */
@@ -162,9 +169,7 @@ nav {
   padding: 2rem;
 }
 
-.nav-list a:hover {
-  background: var(--main-blue);
-}
+
 
 
 
