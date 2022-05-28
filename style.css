@@ -78,6 +78,10 @@ a {
 
 
 
+
+
+
+
 .container {
   width: 70%;
   margin: 100px 0 auto 100px;
@@ -113,19 +117,21 @@ h2 {
 
 
 .announcement {
-  padding: 10px;  
+  padding: 20px;
+  font-weight: 100;  
 }
 
-nav li {
+li {
   list-style: none;
 }
 
 nav > ul {
-  width: 35vw;
+  width: 500px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 nav > ul a {
   color: var(--color-wht-alpha);
 }
@@ -133,6 +139,8 @@ nav > ul a {
 nav > ul a:hover {
   color: var(--color-bg-blue);
 }
+
+
 
 /* nav */
 
@@ -143,15 +151,22 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--color-bg-alpha);
+  background-color: var(--color-bg-alpha);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
 }
 
-.nav-list {
+nav ul {
   display: flex;
   margin-right: 2rem;
 }
+
+
+
+
+
+
+
 
 @media (max-width: 28.75em) {
   .nav {
@@ -172,6 +187,10 @@ nav {
 
 
 
+#header-img {
+  height: 65%;
+  max-width: 200px;
+}
 
 .btn {
   display: inline-block;
