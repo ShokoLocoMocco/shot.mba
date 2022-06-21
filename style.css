@@ -89,7 +89,7 @@ a {
 .container {
   width: 80%;
   margin: 100px auto 100px auto;
-  padding: 30px;
+  padding: 50px;
   align-items: center;
   background: var(--color-bg-alpha);
 }
