@@ -80,13 +80,27 @@ a {
 
 
 
-
-
-.container {
+.container-index {
   width: 70%;
   margin: 100px 0 auto 100px;
   align-items: center;
 }
+
+.container {
+  width: 80%;
+  margin: 100px auto 100px auto;
+  padding: 30px;
+  align-items: center;
+  background: var(--color-bg-alpha);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 30px;
+  }
+}
+
+
 
 
 h1 {
@@ -100,9 +114,6 @@ h1 span {
 }
 
 @media (max-width: 800px) {
-  h1 {
-    font-size: 36px;
-  }
   body .container {
     width: 90%;
     margin: 100px auto auto auto;
@@ -120,6 +131,24 @@ h2 span {
   display: inline-block;
 }
 
+.section-title h3 {
+  font-size: 32px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-bg-ligtblue);
+}
+
+h5 {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: var(--color-wht-alpha);
+}
 
 .announcement {
   padding: 20px;
@@ -169,10 +198,6 @@ nav ul {
 
 
 
-
-
-
-
 @media (max-width: 28.75em) {
   .nav {
     justify-content: center;
@@ -188,7 +213,6 @@ nav ul {
   font-size: 2.2rem;
   padding: 2rem;
 }
-
 
 
 
