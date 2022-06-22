@@ -235,11 +235,41 @@ nav ul {
 }
 
 
+.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover {
+  color: #000!important;
+  background-color: var(--color-wht-alpha)!important;
+  border-radius:16px;
+  width: 400px;
+}
+
+
+
+.w3-blue,.w3-hover-blue:hover{
+  color:#fff!important;
+  background-color: var(--color-lightblue)!important;
+  border-radius:16px;
+  width: 400px;
+}
+
+.w3-round-xlarge {
+  border-radius:16px;
+}
+
 .resume-download {
   background: var(--color-blue);
   color: #fff;
   transition: background 0.3s ease-out;
 }
+
+
+progress {
+  border: none;
+  width: 400px;
+  height: 20px;
+}
+
+
+
 
 
 .resume-download:hover {
