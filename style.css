@@ -153,6 +153,7 @@ h5 {
 strong {
   color: var(--color-bg-blue);
 }
+
 .announcement {
   padding: 20px;
   font-weight: 100;  
@@ -204,11 +205,12 @@ nav ul {
 
 
 
-
+/* nav 
 @media (max-width: 28.75em) {
   .nav {
     justify-content: center;
   }
+*/
 
   .nav-list {
     margin: 0 1rem;
@@ -234,6 +236,14 @@ nav ul {
   border-radius: 5px;
 }
 
+.progress-block {
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.progress {
+  display: block;
+}
 
 .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover {
   color: #000!important;
