@@ -110,7 +110,7 @@ a {
   body .container {
     width: 95%;
     margin: 100px auto auto auto;
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -180,6 +180,12 @@ strong {
 
 .testimonial-item {
   margin: 50px;
+}
+
+@media (max-width: 800px) {
+  .testimonial-item {
+    margin: 5px;
+  }
 }
 
 nav li {
