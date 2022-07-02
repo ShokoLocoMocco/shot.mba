@@ -40,10 +40,16 @@ font-family: 'Russo One', sans-serif;
   --color-wht-alpha: rgba(255, 255, 255, 0.7);
 }
 
+html {
+  /* Setting a base font size of 10px give us easier rem calculations
+     Info: 1rem === 10px, 1.5rem === 15px, 2rem === 20px and so forth
+   */
+  font-size: 10px;
+}
 
 body {
   font-family: 'Poppins', 'Open Sans', sans-serif;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.4;
   color: #fff;
@@ -100,11 +106,18 @@ a {
   }
 }
 
+@media (max-width: 800px) {
+  body .container {
+    width: 90%;
+    margin: 100px auto auto auto;
+  }
+}
+
 
 
 
 h1 {
-  font-size: 48px;
+  font-size: 4.8rem;
   color: var(--color-wht-alpha);
 }
 
@@ -113,12 +126,13 @@ h1 span {
   display: inline-block;
 }
 
-@media (max-width: 800px) {
-  body .container {
-    width: 90%;
-    margin: 100px auto auto auto;
+@media (max-width: 460px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
   }
 }
+
 
 h2 {
   color: var(--color-wht-alpha);
@@ -132,20 +146,20 @@ h2 span {
 }
 
 .section-title h3 {
-  font-size: 32px;
+  font-size: 3.2rem;
   color: #fff;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-family: "Raleway", sans-serif;
   color: var(--color-bg-ligtblue);
 }
 
 h5 {
-  font-size: 20px;
+  font-size: 2rem;
   font-family: "Raleway", sans-serif;
   color: var(--color-wht-alpha);
 }
@@ -226,7 +240,7 @@ nav ul {
 
 .nav-list a {
   display: block;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   padding: 2rem;
 }
 
@@ -295,7 +309,7 @@ progress {
 
 
 .contact-details {
-  font-size: 1rem;
+  font-size: 1.6rem;
   transition: transform 0.3s ease-out;
 }
 
@@ -308,7 +322,7 @@ progress {
   right: 0;
   bottom: 0;
   padding: 15px;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .credit a {
