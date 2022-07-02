@@ -92,9 +92,9 @@ a {
   align-items: center;
 }
 
-@media (max-height: 1024px) {
+@media (max-width: 1024px) {
   .container-index {
-    margin: 100px 0 100px 100px;
+    margin: 100px 0 100px 50px;
   }
 }
 
