@@ -212,6 +212,12 @@ nav ul {
   }
 */
 
+@media (max-width: 800px) {
+  body {
+    font-size: 1.2rem;
+    }
+}
+
   .nav-list {
     margin: 0 1rem;
   }
