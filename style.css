@@ -92,6 +92,12 @@ a {
   align-items: center;
 }
 
+@media (max-height: 1024px) {
+  .container-index {
+    margin: 100px 0 100px 100px;
+  }
+}
+
 .container {
   width: 80%;
   margin: 100px auto 100px auto;
