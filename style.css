@@ -15,15 +15,15 @@ font-family: 'Fredericka the Great', cursive;
 font-family: 'Kaushan Script', cursive;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Pacifico', cursive;
+font-family: 'Passion One', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Raleway', sans-serif;
-font-family: 'Rock 3D', cursive;
 font-family: 'Rubik', sans-serif;
 font-family: 'Rubik Moonrocks', cursive;
 font-family: 'Russo One', sans-serif;
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat+Brush&family=Coming+Soon&family=Dancing+Script:wght@700&family=Fredericka+the+Great&family=Kaushan+Script&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,800&family=Raleway:wght@200;400;700&family=Rock+3D&family=Rubik+Moonrocks&family=Rubik:wght@300;400&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Caveat+Brush&family=Coming+Soon&family=Dancing+Script:wght@700&family=Fredericka+the+Great&family=Kaushan+Script&family=Open+Sans:ital,wght@0,300;0,400;1,400&family=Pacifico&family=Passion+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,800&family=Raleway:wght@200;400;700&family=Rubik+Moonrocks&family=Rubik:wght@300;400&family=Russo+One&display=swap');
 
 
 :root {
@@ -51,7 +51,7 @@ body {
   font-family: 'Poppins', 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.75;
   color: #fff;
   margin: 0;
   position: relative;
@@ -84,7 +84,33 @@ a {
 
 
 
+.container {
+  width: 80%;
+  margin: 100px auto;
+  align-items: center;
+  background: var(--color-bg-alpha);
+}
 
+/* 
+@media (max-width: 1024px) {
+  .container {
+    margin: 100px;
+    padding: 50px 100px 50px 100px;
+  }
+}
+*/
+
+@media (max-width: 800px) {
+  body .container {
+    width: 95%;
+    margin: 100px auto 100px auto;
+    font-size: 2rem;
+  }
+}
+
+.content-whole {
+  padding: 5% 10%;
+}
 
 .container-index {
   width: 70%;
@@ -98,28 +124,6 @@ a {
   }
 }
 
-.container {
-  width: 80%;
-  margin: 100px auto 100px auto;
-  padding: 50px;
-  align-items: center;
-  background: var(--color-bg-alpha);
-}
-
-@media (max-width: 1024px) {
-  .container {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 800px) {
-  body .container {
-    width: 95%;
-    margin: 100px auto auto auto;
-    font-size: 2rem;
-  }
-}
-
 
 
 
@@ -128,23 +132,20 @@ h1 {
   color: var(--color-wht-alpha);
 }
 
-h1 span {
-  color: #fff;
-  display: inline-block;
-}
 
-@media (max-width: 460px) {
+@media (max-width: 800px) {
   h1 {
     font-size: 3.5rem;
     line-height: 1.2;
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
   }
 }
 
 
+/*suedo snippet*/
 h2 {
   color: var(--color-wht-alpha);
   font-weight: 600;
@@ -185,14 +186,18 @@ strong {
 }
 
 .testimonial-item {
-  margin: 50px;
+  padding: 10px;
 }
 
+/*
 @media (max-width: 800px) {
   .testimonial-item {
     margin: 5px;
   }
 }
+*/
+
+/* nav items*/
 
 nav li {
   list-style: none;
@@ -215,7 +220,7 @@ nav > ul a:hover {
 
 
 
-/* nav */
+/* nav bar*/
 
 nav {
   display: flex;
@@ -261,6 +266,15 @@ nav ul {
   padding: 2rem;
 }
 
+p span {
+  font-family: 'Passion One', cursive;
+
+}
+
+.first {
+  font-size: 3.6rem;
+  line-height: 0;
+}
 
 
 #header-img {
@@ -274,16 +288,34 @@ nav ul {
   border-radius: 5px;
 }
 
+
+/*progress things */
+
+.flex-container {
+  display: flex;
+}
+
 .progress-block {
-  flex-wrap: wrap;
-  flex-direction: column;
+margin: auto;
 }
 
 .progress {
   display: block;
 }
 
-.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover {
+@media (max-width: 1320px) {
+  .flex-container {
+    display: block;
+    align-items: center;
+  }
+  .progress {
+    margin: auto;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.w3-light-grey {
   color: #000!important;
   background-color: var(--color-wht-alpha)!important;
   border-radius:16px;
@@ -292,7 +324,7 @@ nav ul {
 
 
 
-.w3-blue,.w3-hover-blue:hover{
+.w3-blue {
   color:#fff!important;
   background-color: var(--color-lightblue)!important;
   border-radius:16px;
@@ -334,10 +366,15 @@ progress {
   transform: translateY(-5px);
 }
 
+
+/*footer */
+
+
+
 .credit {
   position: fixed;
-  right: 0;
   bottom: 0;
+  right: 0;
   padding: 15px;
   font-size: 1.2rem;
 }
@@ -345,3 +382,30 @@ progress {
 .credit a {
   color: var(--color-bg-blue)
 }
+
+/*
+.footer {
+  display: flex;
+  position: absolute;
+  background: var(--color-bg-alpha);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+*/
+
+/*
+nav {
+  display: flex;
+  justify-content: flex-end;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-bg-alpha);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+*/
+
