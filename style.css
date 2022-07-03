@@ -196,13 +196,14 @@ strong {
   padding: 10px;
 }
 
-/*
+
 @media (max-width: 800px) {
   .testimonial-item {
-    margin: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
   }
 }
-*/
+
 
 /* nav items*/
 
