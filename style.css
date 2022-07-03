@@ -303,7 +303,7 @@ margin: auto;
   display: block;
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1080px) {
   .flex-container {
     display: block;
     align-items: center;
@@ -319,7 +319,7 @@ margin: auto;
   color: #000!important;
   background-color: var(--color-wht-alpha)!important;
   border-radius:16px;
-  width: 400px;
+  width: 300px;
 }
 
 
@@ -328,7 +328,7 @@ margin: auto;
   color:#fff!important;
   background-color: var(--color-lightblue)!important;
   border-radius:16px;
-  width: 400px;
+  width: 300px;
 }
 
 .w3-round-xlarge {
