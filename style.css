@@ -110,7 +110,6 @@ a {
 
 @media (max-width: 800px) {
   body {
-    font-size: 2rem;
     flex-wrap: wrap;
     }
 }
@@ -193,14 +192,14 @@ strong {
 }
 
 .testimonial-item {
-  padding: 10px;
+  margin: 30px;
 }
 
 
 @media (max-width: 800px) {
   .testimonial-item {
-    padding: 5px;
-    font-size: 1.2rem;
+    padding: 10px 0;
+    font-size: 1.6rem;
   }
 }
 
@@ -274,7 +273,9 @@ nav ul {
 }
 
 @media (max-width: 1080px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
