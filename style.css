@@ -37,6 +37,7 @@ font-family: 'Russo One', sans-serif;
   --color-yellow: #FFDA62;
   --color-lightblue: #556DA3;
   --color-blue: #497480;
+  --color-wht-alpha: rgba(255, 255, 255, 0.8);
 }
 
 html {
@@ -56,6 +57,18 @@ body {
   position: relative;
 }
 
+#index-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: -1;
+  background: url(img/notes_bg_pic.png) top right no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 body::before {
   content: '';
@@ -65,10 +78,12 @@ body::before {
   right: 0;
   height: 100%;
   z-index: -1;
-  background: url(img/florida_op-cropped-op.png) top right no-repeat;
+  background: url(img/notes_bg_no-pic.png) top right no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
 
 @media (min-width: 1024px) {
   body::before {
@@ -250,7 +265,10 @@ nav ul {
   margin-right: 2rem;
 }
 
-
+nav span {
+  display: flex;
+  font-weight: 700;
+}
 
 /* nav 
 @media (max-width: 28.75em) {
