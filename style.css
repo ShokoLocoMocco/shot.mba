@@ -177,6 +177,11 @@ h2 span {
   display: inline-block;
 }
 
+.section-title {
+margin: 50px 0;
+}
+
+
 .section-title h3 {
   font-size: 3.2rem;
   color: #fff;
@@ -205,7 +210,6 @@ strong {
 }
 
 .announcement {
-  padding: 20px;
   font-weight: 100;  
 }
 
@@ -417,6 +421,60 @@ progress {
 .contact-details:hover {
   transform: translateY(-5px);
 }
+
+
+/* project grid*/
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 3rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 30.625em) {
+  .projects-section {
+    padding: 6rem 1rem;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background: var(--color-wht-alpha);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.code {
+  color: var(--color-wht-alpha);
+  transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+  color: var(--color-pink);
+}
+
+.project-image {
+  height: calc(100% - 5rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+}
+
+
+
+
 
 
 /*footer */
