@@ -447,7 +447,6 @@ progress {
 
 .projects-section {
   text-align: center;
-  padding: 5rem 0;
   width: 100%;
   align-items: center;
 }
@@ -489,7 +488,7 @@ progress {
 }
 
 .project-image {
-  height: calc(100% - 10rem);
+  height: 240px;
   width: 100%;
   object-fit: cover;
 }
