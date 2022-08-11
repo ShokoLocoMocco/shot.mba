@@ -455,8 +455,8 @@ progress {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  grid-gap: 1.5rem;
-  width: 90%;
+  grid-gap: 1rem;
+  width: 80%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 4rem;
