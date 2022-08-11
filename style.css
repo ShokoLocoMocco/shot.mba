@@ -141,8 +141,15 @@ a {
   padding: 5% 15%;
 }
 
+.section-title {
+  margin: 40px 0;
+  }
 
 @media (max-width: 800px) {
+  .section-title {
+    margin: 10px 0;
+    }
+  
   .content-whole {
     padding: 5% 5%;
     }
@@ -204,9 +211,7 @@ h2 span {
   display: inline-block;
 }
 
-.section-title {
-margin: 40px 0;
-}
+
 
 
 .section-title h3 {
