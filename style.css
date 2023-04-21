@@ -592,7 +592,13 @@ img.asdiv {
 }
 
 
-img.astitle {
+.astitle {
+  display:block;
+  margin: 0px auto;
+}
+
+
+div.astitle {
   display:block;
   margin: 0px auto;
 }
