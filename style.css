@@ -235,6 +235,12 @@ h2 span {
   margin: 20px 0;
 }
 
+
+.snip {
+  background-color: var(--color-bg-alpha);
+  padding: 20px 50px;
+}
+
 h4 {
   font-size: 2.4rem;
   font-family: "Raleway", sans-serif;
@@ -634,6 +640,9 @@ margin: auto;
 
 .progress {
   display: block;
+  border: none;
+  width: 400px;
+  height: 20px;
 }
 
 @media (max-width: 1080px) {
@@ -675,13 +684,16 @@ margin: auto;
 }
 
 
-progress {
-  border: none;
-  width: 400px;
-  height: 20px;
+
+.button {
+  text-align: center;
 }
 
 
+.freelance-u {
+  margin: 50px auto 100px auto;
+  text-align: center;
+}
 
 
 
