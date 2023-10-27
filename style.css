@@ -143,12 +143,14 @@ a {
     }
 }
 
+/*
 @media (min-width: 1080px) {
   .container {
     flex-wrap: wrap;
     width: 960px;
     }
 }
+*/
 
 .content-whole {
   padding: 5% 15%;
