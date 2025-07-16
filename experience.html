@@ -33,7 +33,10 @@ folder = "portfolio/test" -->
 
   <link href="img/shot.mba_favicon.png" rel="icon">
   <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet"> <!--some fonts are here-->
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="style_mba.css" rel="stylesheet"> 
+
+<!--some fonts are here-->
   <link href="https://pagecdn.io/lib/easyfonts/fonts.css" rel="stylesheet" /> <!-- use div class to initiate font e.g. <div class="font-open-sans w600i"> -->
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet"  
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -43,7 +46,7 @@ folder = "portfolio/test" -->
 </head>
 
 <body>
-
+<!-- old
   <nav id="myTopnav">
     <div class="topnav"><a href = "index.html"><img
             id="header-img" src="img/shot.mba_logo-nobg.svg" /></a>
@@ -57,7 +60,27 @@ folder = "portfolio/test" -->
     </a>
   </div>
   </nav>
+-->
+  <header>
 
+    <div class="logo">
+          <a href="index.html"> <img src="img/shot.mba_logo.png" alt=""> </a>
+      </div>
+      
+      <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+          <ul class="nav__list">
+              <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+              <li class="nav__item"><a href="index.html#works" class="nav__link">What I Do</a></li>
+              <li class="nav__item"><a href="index.html#personal" class="nav__link">More</a></li>
+              <li class="nav__item"><a href="experience.html" class="nav__link"><span>Resume</span></a></li>
+              <li class="nav__item"><a href="https://linktr.ee/shot.mba" target="_blank" class="nav__link">Connect</a></li>
+          </ul>
+      </nav>
+      </header>
 <div class = "container">
   <div class="content-whole">
   <div class="section-title snip">
@@ -76,20 +99,13 @@ folder = "portfolio/test" -->
  <!--     <font size=-1><em>*the syntax does not run in any existing computer language yet.</em></font>-->
   </div>
 
-  <br><br>
-
 
   <br>
   <br>
-  <div class = "button">
+<div class="resume-btn">
   <a href="https://shot.mba/Resume-S.Tachikawa.pdf"
-    class="btn resume-download" alt = "view in browser">View My Resume</a>
-</div>
-<br>
-<div class = "button">
-  <a href="https://github.com/ShokoLocoMocco/shot.mba/raw/main/Resume-S.Tachikawa.pdf"
-    class="btn resume-download" alt = ".pdf">Download My Resume</a>
-</div>
+    class="btn" alt = "view in browser">View My Resume</a>
+  </div>
 <br>
 <br>
 
@@ -119,14 +135,7 @@ folder = "portfolio/test" -->
   </div>
 
   <!--progress-block 1-->
-  <div class="progress-block freelance-u">
 
-  <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="981bdfb4-d706-4068-b1b2-08a8e1201bb9" data-share-badge-host="https://www.credly.com">https://www.credly.com/badges/981bdfb4-d706-4068-b1b2-08a8e1201bb9/public_url</div> 
-  </div>
-
-
-
-</div>
 
 <br>
 
@@ -214,7 +223,7 @@ folder = "portfolio/test" -->
 <a href="https://www.freelancersunion.org?utm_source=badge&utm_campaign=member&utm_content=member-stamp-200" target="_blank"><img src="https://assets.freelancersunion.org/static/images/member-badge.ec82f86413ea.svg" alt="Proud member of Freelancers Union" height="200" width="200" style="height:auto;max-width:200px" /></a>
 </div>
 
-
+<div class="backtotop"><a href="#">Back to Top ⬆️</a></div>
 
 
 </div> <!--"content-whole"-->
@@ -225,7 +234,7 @@ folder = "portfolio/test" -->
   <div class = "credit">Copyright© <a href = "https://shokolatte.com/" target = "_blank">Showee</a> of <a href = "https://sho-biz.com/" target = "_blank">Sho-Boo Entertainment</a> 2022-2023</div>
   
   </footer>
-
+  <script src="index.js"></script>
         </body>
         <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
