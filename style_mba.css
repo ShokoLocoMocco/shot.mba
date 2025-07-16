@@ -117,7 +117,7 @@ a {
 
 .container {
   width: 80%;
-  margin: 100px auto;
+  margin: 100px auto 30px auto;
   align-items: center;
   background: var(--color-bg-alpha);
 }
