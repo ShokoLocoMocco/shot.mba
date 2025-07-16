@@ -1,163 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Showee Portfolio Init
-folder = "portfolio/test" -->
 
 <head>
-  <meta charset="utf-8">
-  <title>ShoT.MBA - Portfolio and Profile of a Versatile MBA and Data Analyst</title>
-  <meta name="description" content="Discover the versatile MBA and Data Analyst, Shokolatte Tachikawa. Leverage her expertise in business management, data analysis, and visualization to gain insights and make better decisions. Explore the portfolio of an *Analyst of all time* 📈, a *Learner by nature* 📚, and dedicated to *Upskilling for life* ✍️." />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shokolatte Tachikawa - Portfolio</title>
+    <meta name="description" content="Discover that versatile MBA and Data Analyst, Shokolatte Tachikawa! Leverage her expertise in business management, data analysis, and visualization to gain insights and make better decisions. Explore the portfolio of an *Analyst of all time* 📈, a *Learner by nature* 📚, and dedicated to *Upskilling for life* ✍️." />
+    <meta name="keywords" content="MBA, Portfolio, Data analysis, Data visualization, Business management, Statistical analysis, Quantitative analysis, Tableau, R programming, Python" />
+    <link rel="icon" href="img/shot.mba_favicon.png">
+    
+    <!-- normalize -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<link rel="stylesheet" href="css/style.css" />
+	
+
+	
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <!-- Global site tag (gtag.js) - shot.mba    Google Analytics shot.mba-->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P2HZB8FHJZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P2HZB8FHJZ');
+    </script>
 
 
-  <!-- desc alt
-  <meta name="description" content="Portfolio and profile of Shokolatte Tachikawa, who is a versatile MBA and a Data Analyst. After spending years with global mega corporations, Shokolatte acquired a business management degree (MBA) followed by a data analysis and visualization master of science degree which exposed her versatility in the business field. Her strengths are her in-depth data methodologies that can leverage quantitative representation in practical frameworks, combined with her affluent business expertise. Shokolatte is passionate about aesthetical science models executing advantageous adaptability nurtured in various fields. She is also an *Analyst of all time* 📈, a *Learner by nature* 📚, and dedicated to *Upskilling for life* ✍️" />
-    -->
 
-  <meta name="keywords" content="MBA, Portfolio, Data analysis, Data visualization, Business management, Statistical analysis, Quantitative analysis, Tableau, R programming, Python" />
-
-
-
-  <meta http-equiv="refresh">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-P2HZB8FHJZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-P2HZB8FHJZ');
-</script>
-
-  <link rel="icon" href="img/shot.mba_favicon.png">
-
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css"> <!--some fonts are here-->
-  <link href="https://pagecdn.io/lib/easyfonts/fonts.css" rel="stylesheet" /> <!-- use div class to initiate font e.g. <div class="font-open-sans w600i"> -->
-  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet"  
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous" /> <!--icons-->
+    <!-- Google tag (gtag.js) 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3LEC0YL9L"></script> 
+    <script> 
+        window.dataLayer = window.dataLayer || []; 
+        function gtag(){dataLayer.push(arguments);} 
+        gtag('js', new Date()); 
+        gtag('config', 'G-N3LEC0YL9L'); 
+    </script>
+Shokolatte.Com-->
 
 
 </head>
+<body>
+    <header>
 
-
-  <header id="header">
-    <div class="logo">
-
+	<div class="logo">
+        <a href="index.html"> <img src="img/shot.mba_logo.png" alt=""> </a>
     </div>
-
-    <nav id="myTopnav">
-      <div class="topnav"><a href = "index.html"><img
-              id="header-img" src="img/shot.mba_logo-nobg.svg" /></a>
-      <a href = "about.html">About</a>
-      <a href = "projects.html">Works</a>
-      <a href = "inspirations.html">Inspirations</a>
-      <a href = "experience.html">Resume</a>
-      <a href = "https://linktr.ee/shot.mba" target = "_blank">Connect</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link"><span>Home</span></a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="#works" class="nav__link">What I Do</a></li>
+            <li class="nav__item"><a href="#personal" class="nav__link">More</a></li>
+            <li class="nav__item"><a href="experience.html" class="nav__link">Resume</a></li>
+            <li class="nav__item"><a href="https://linktr.ee/shot.mba" target="_blank" class="nav__link">Connect</a></li>
+        </ul>
     </nav>
-    
-  </header>
+    </header>
+
+    <!--intro-->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            <strong><span>Sho</span>kolatte <span>T</span>achikawa,</strong> <span>.MBA</span>/MSc
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Data Analyst & Business Consultant</p>
+        <img src="img/headshot_sq.png" alt="an id photo of Shokolatte" class="intro__img">
+    </section>
+
+    <!--About-->
+    <section class="aboutme" id="about">
+        <h2 class="section__title section__title--about">What I Am</h2>
+        <div class="about">
+
+            <div class="about_me">
+                <h3>Data Analyst 📊</h3>
+                <p>Give me data, and I’ll analyze it—or even start by collecting it. I uncover patterns with a strong statistical foundation and expertise in tools like R, Tableau, Python, and more. I infuse life experiences into analysis, reaching conclusions that mere numbers alone cannot reveal.</p>
+            </div> <!-- / about_me-->
+            
+            <div class="about_me">
+                <h3>Business Consultant 📂</h3>
+                <p>Data-driven and efficiency-focused, I bring experience from global mega-corporations to local nonprofits. I identify opportunities, analyze challenges, and develop strategies that drive growth and streamline operations, delivering impactful results.</p>
+            </div> <!-- / about_me-->
+
+            <div class="about_me">
+                <h3>MBA + MSc 👩‍🎓</h3>
+                <p>From an autodidact swagger to a solid academic achiever with an MBA and an MSc in Data Analysis & Visualization, I’ve transformed into a lifelong learner. I combine strategic business insight with advanced analytical skills to tackle complex challenges.</p>
+            </div> <!-- / about_me-->
 
 
+        </div> <!--/ about-->
 
-<body id="index-bg">
+        <a href="experience.html" class="btn">Resume</a>
 
+    </section>
 
+    <section class="myworks" id="works">
+        <h2 class="section__title section__title--works">What I Do</h2>
+        <p class="section__subtitle section__subtitle--works">Selected Works</p>
+        
+        <div class="work">
 
+            <!--work -1-->
+            <a href="project-chord.html" class="work__item">
+                <img src="img/chord_thumb.png" alt="Chord Bigram project logo" class="work__img">
+            </a>
+                        
+            <!--work 1-->
+            <a href="project-uch.html" class="work__item">
+                <img src="img/uch_logo-cr-gry-grn.png" alt="Urban Clearn Heroes logo" class="work__img">
+            </a>
 
+             <!--work 2-->
+             <a href="project-shobiz.html" class="work__item">
+                <img src="img/header_banner-sm.png" alt="Sho' Biz Intelligence Collectives logo" class="work__img">
+            </a>
+            
+            <!--work 3-->
+            <a href="project-jln.html" class="work__item">
+                <img src="img/JLN_thumb.png" alt="JP Linxx NYC logo" class="work__img">
+            </a>  
+            
+            <!--work 4-->
+            <a href="project-restaurant.html" class="work__item">
+                <img src="img/restaurant.png" alt="NYC Restaurant Inspection Analysis image" class="work__img">
+            </a>  
 
-<div class = "container-index">
-<h1><span><font color = #fff>Sho</font>kolatte</span> <span><font color = #fff>T</font>achikawa:</span></h1>
-<h2 class="snippet">{<br>
-  &nbsp;'a <font color = #FF5C56>Data</font> D<font color = #89ADFF>well</font>er';<br>
-  &nbsp;'a <font color = #fff>M</font>.<font color = #fff>Sc</font><span>. in </span><font color = #FF5C56> Data</font> <font color = #FFDA62>Analysis</font> += <font color = #FFDA62>Visualization</font>';<br>
-  &nbsp;'an <font color = #fff>M</font>.<font color = #fff>B</font>.<font color = #fff>A</font>.';<br>
-  &nbsp;&& 'a <font color = #96E9FF>Life</font>time <font color = #89ADFF>Learn</font>er';<br>
-}</h2>
-
-
-
-<!-- 
-  <div class = "announcement">
-
-</div> 
--->
-
-
-
-<div class="contact-links">
-  <a
-    href="https://github.com/ShokoLocoMocco"
-    target="_blank"
-    class="btn contact-details" alt = "GitHub"
-    ><i class="fab fa-github"></i> </a>
-    
-  <a 
-    href="https://www.linkedin.com/in/shokolattetachikawa/" target="_blank"
-    class="btn contact-details" alt = "LinkedIn"
-    ><i class="fab fa-linkedin-in"></i> </a>    
-
-
-    <a
-    href="https://public.tableau.com/app/profile/shokolatte.tachikawa#!/"
-    target="_blank"
-    class="btn contact-details">
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-width=1.6rem height=1.6rem
-viewBox="-5 -5 50 50"
-style=" fill:#89ADFF;" alt = "Tableau"><path d="M 23.5 0 L 23.5 4.5 L 19.5 4.5 L 19.5 6.5 L 23.5 6.5 L 23.5 11 L 25.5 11 L 25.5 6.5 L 29.5 6.5 L 29.5 4.5 L 25.5 4.5 L 25.5 0 L 23.5 0 z M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 L 11 5 z M 36 5 L 36 11 L 30 11 L 30 13 L 36 13 L 36 19 L 38 19 L 38 13 L 44 13 L 44 11 L 38 11 L 38 5 L 36 5 z M 23 16 L 23 23 L 16 23 L 16 26 L 23 26 L 23 33 L 26 33 L 26 26 L 33 26 L 33 23 L 26 23 L 26 16 L 23 16 z M 5 19 L 5 23.5 L 1 23.5 L 1 25.5 L 5 25.5 L 5 30 L 7 30 L 7 25.5 L 11 25.5 L 11 23.5 L 7 23.5 L 7 19 L 5 19 z M 43 19 L 43 23.5 L 39 23.5 L 39 25.5 L 43 25.5 L 43 30 L 45 30 L 45 25.5 L 49 25.5 L 49 23.5 L 45 23.5 L 45 19 L 43 19 z M 11 29 L 11 35 L 5 35 L 5 37 L 11 37 L 11 43 L 13 43 L 13 37 L 19 37 L 19 35 L 13 35 L 13 29 L 11 29 z M 36 29 L 36 35 L 30 35 L 30 37 L 36 37 L 36 43 L 38 43 L 38 37 L 44 37 L 44 35 L 38 35 L 38 29 L 36 29 z M 23.5 38 L 23.5 42.5 L 19.5 42.5 L 19.5 44.5 L 23.5 44.5 L 23.5 49 L 25.5 49 L 25.5 44.5 L 29.5 44.5 L 29.5 42.5 L 25.5 42.5 L 25.5 38 L 23.5 38 z"></path></svg> </a>   
+            <!--work 5-->
+            <a href="project-quantifiedself.html" class="work__item">
+                <img src="img/quantifyself.png" alt="Quantify Self Spotify Data Analysis image" class="work__img">
+            </a>    
 
 
+            <!--work 6-->
+            <a href="project-minibrands.html" class="work__item">
+                <img src="img/team6.png" alt="Mini Brands marketing analysis logo" class="work__img">
+            </a> 
 
-  <a
-    href="https://www.kaggle.com/showeenyc"
-    target="_blank"
-    class="btn contact-details" alt = "Kaggle">
-    <i class="fab fa-kaggle"></i> </a>  
-    
+            <!--work 7-->
+            <a href="project-lulxury.html" class="work__item">
+                <img src="img/luxury.png" alt="Brand Positioning & Digital Marketing image" class="work__img">
+            </a> 
+
+            <!--work 8-->
+            <a href="project-finwacc.html" class="work__item">
+                <img src="img/Midland.png" alt="HBS Corporate Finance case analysis image" class="work__img">
+            </a>
+
+            <!--work 9-->
+            <a href="project-fincapital.html" class="work__item">
+                <img src="img/Marriott.png" alt="Cost of capital WACC analysis image" class="work__img">
+            </a>
+            
+            <!--work 1-->
+            <a href="project-gsa.html" class="work__item">
+                <img src="img/newsletter.jpg" alt="Baruch Graduate Student Assembly newsletter image" class="work__img">
+            </a>           
+
+        </div>
+
+        <div class="backtotop"><a href="#">Back to Top ⬆️</a></div>
+    </section>
+
+    <!--personal-->
+    <section class="mypersonal" id="personal">
+        <h2 class="section__title section__title--personal">Who I Am at Heart</h2>
+        <p class="section__subtitle section__subtitle--personal">A bit more about myself...</p>
+
+        <div class="personal__body">
+
+            <div class="personal_me">
+            <h3>Community Enthusiast 🙌</h3>
+            <p>Passionate about giving back and building connections. I enjoy volunteering and fostering a sense of belonging in diverse communities. I believe in the power of synergy to create meaningful changes and positive vibes.</p>
+        </div>
+
+        <div class="personal_me">
+            <h3>Strategic Diagonal Walker 🚶‍♀️</h3>
+            <p>I take unconventional yet efficient paths to solve problems, inspired by real-life habits. Balancing creativity with practicality, I find smart solutions and constantly look for ways to streamline and innovate.</p>
+        </div>
+
+        <div class="personal_me">
+            <h3>Quant Baller 🎲</h3>
+            <p>Where there’s a number, I’m here to play. Whether it’s license plates while driving or concert ticket numbers, I make them equal to 10 using PEMDAS. I bid on Spades by quadruple probability and conquer the pool table by leveraging geometric tactics (shoutout to my military uncs who taught me how to play and kept letting me win 😉😎🤑) -- I just find quant operations in every fun.</p>
+        </div>
+
+        </div>
+        
+        <div class="image-container">
+        <img src="img/IMG_0925.jpg" alt="obligatory bathroom selfie" class="personal__img">
+        </div>
+        <div class="link-btn"><a href="about.html" class="btn">...Even More</a>
+        
+        <div class="backtotop"><a href="#">Back to Top ⬆️</a></div>
+        </div>
+    </section>
 
 
-  <a 
-    href="https://twitter.com/ShoVizTodayGPT"
-    target="_blank"
-    class="btn contact-details" alt = "Twitter"
-    ><i class="fab fa-twitter"></i> </a>
-    
-  <a
-    href="https://www.facebook.com/funbizandmba"
-    target="_blank"
-    class="btn contact-details"
-    ><i class="fab fa-facebook-square" alt = "Facebook"></i> </a>
+    <!--footer -->
+    <footer class="footer">
 
-  <a 
-    href="https://mbadigitalmarketing.wixsite.com/mysite/contact" 
-    target="_blank" class="btn contact-details" alt = "Contact Form"
-    ><i class="fas fa-at"></i> </a>
-  
-</div>
-</div>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/ShokoLocoMocco" target="_blank"><i class="fab fa-github"></i></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/shokolattetachikawa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://public.tableau.com/app/profile/shokolatte.tachikawa#!/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="15" width="15" alt = "Tableau"><path d="M242.69,340.3h26.62V267.7h67V241.88h-67v-72.6H242.69v72.6H176.54V267.7h66.15Z" id="mainIconPathAttribute"></path><path d="M119.26,445.18h22.59V380.64h59.7V360.47h-59.7V295.13H119.26v65.34H59.56v20.17h59.7Z" id="mainIconPathAttribute"></path><path d="M370.15,212h22.59V147.5h60.5V128.13h-60.5V62.79H370.15v65.34h-59.7V147.5h59.7Z" id="mainIconPathAttribute"></path><path d="M246.72,496h19.36V450h41.15V433.08H266.08v-46H246.72v46H206.39V450h40.33Z" id="mainIconPathAttribute"></path><path d="M120.07,212h21V146.69h60.51V128.13H141V62.79h-21v65.34H59.56v18.56h60.51Z" id="mainIconPathAttribute"></path><path d="M435.72,308.84h19.36V263.66H496V245.92H455.08V200.74H435.72v45.18H395.39v17.74h40.33Z" id="mainIconPathAttribute"></path><path fill-rule="evenodd" d="M370.15,445.18h22.59V380.64h60.5V360.47h-60.5V295.13H370.15v65.34h-59.7v20.17h59.7Z" id="mainIconPathAttribute"></path><path d="M307,74.08V60.37H266.66V16H252.14V60.37H211.81V74.08h40.33v44.37h14.52V74.08ZM56.11,305.61H70.63V261.24H111V247.53H70.63V204H56.11v43.56H16v14.52L56.11,262Z" id="mainIconPathAttribute"></path></svg></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.kaggle.com/showeenyc" target="_blank"><i class="fab fa-kaggle"></i></a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linktr.ee/shot.mba" target="_blank"><i class="fas fa-link"></i></a>
+            </li>
+        </ul>
+
+        <div class="copyright">
+            <a href="https://shot.mba" class="footer__link" target="_blank">https://shot.mba</a> &#169; 2025 All rights reserved.
+        </div>
+        </footer>
+    </footer>
+
+    <script src="index.js"></script>
+
 </body>
 
-
-<footer id = "footer">
-<div class = "credit">Copyright© <a href = "https://shokolatte.com/" target = "_blank">Showee</a> of <a href = "https://sho-biz.com/" target = "_blank">Sho-Boo Entertainment</a> 2022-2023</div>
-
-</footer>
-
-<script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
 </html>

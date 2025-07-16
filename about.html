@@ -31,7 +31,10 @@ folder = "portfolio/test" -->
 
   <link href="img/shot.mba_favicon.png" rel="icon">
   <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet"> <!--some fonts are here-->
+  <link href="css/style.css" rel="stylesheet"/>
+  <link href="style_mba.css" rel="stylesheet">
+
+ <!--some fonts are here-->
   <link href="https://pagecdn.io/lib/easyfonts/fonts.css" rel="stylesheet" /> <!-- use div class to initiate font e.g. <div class="font-open-sans w600i"> -->
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" rel="stylesheet"  
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
@@ -41,9 +44,9 @@ folder = "portfolio/test" -->
 </head>
 
 
-<body>
+<body class="project">
 
-
+<!-- old
   <nav id="myTopnav">
     <div class="topnav"><a href = "index.html"><img
             id="header-img" src="img/shot.mba_logo-nobg.svg" /></a>
@@ -57,6 +60,27 @@ folder = "portfolio/test" -->
     </a>
   </div>
   </nav>
+-->
+    <header>
+
+	<div class="logo">
+        <a href="index.html"> <img src="img/shot.mba_logo.png" alt=""> </a>
+    </div>
+    
+    <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+            <li class="nav__item"><a href="index.html#works" class="nav__link">What I Do</a></li>
+            <li class="nav__item"><a href="index.html#personal" class="nav__link">More</a></li>
+            <li class="nav__item"><a href="experience.html" class="nav__link">Resume</a></li>
+            <li class="nav__item"><a href="https://linktr.ee/shot.mba" target="_blank" class="nav__link">Connect</a></li>
+        </ul>
+    </nav>
+    </header>
 
 
   <div class="container">
@@ -118,6 +142,7 @@ folder = "portfolio/test" -->
 
 
          <br>
+         <div class="backtotop"><a href="#">Back to Top ⬆️</a></div>
 
         
         <div class="section-title">
@@ -169,6 +194,8 @@ My entire Clifton Strengths Report can be viewed/downloaded <a href="resources\G
 If you are seeking to work with a person full with positivity and strategies, I'm here for you! Please contact at shot[dot]mba @ gmail[dot]com to discuss what I can do to help grow your business.</p>
 </p>
 
+<div class="backtotop"><a href="#">Back to Top ⬆️</a></div>
+
 <br>
 <p> <div class="section-title">
   <h2>> library(<font color = #96E9FF>CERTIFICATES</font>)</h2>
@@ -195,12 +222,14 @@ During COVID-19 quarantine, I developed my devotion to accomplishing online cert
     <!-- </div> 
 <br>
 
-
 <div class="section-title">
   <h2>> summarize(<font color = #FFD67B>E</font>)</h2>
 </div>
 
 -->
+
+<div class="backtotop"><a href="#">Back to Top ⬆️</a></div>
+
 
 
 <br>
@@ -291,7 +320,7 @@ During COVID-19 quarantine, I developed my devotion to accomplishing online cert
 
   </div>
 
-
+<div class="backtotop"><a href="#">Back to Top ⬆️</a></div>
 
 </section>
 
@@ -316,7 +345,7 @@ During COVID-19 quarantine, I developed my devotion to accomplishing online cert
   <div class = "credit">Copyright© <a href = "https://shokolatte.com/" target = "_blank">Showee</a> of <a href = "https://sho-biz.com/" target = "_blank">Sho-Boo Entertainment</a> 2022-2023</div>
   
   </footer>
-
+    <script src="index.js"></script>
 <script src="script.js"></script>
 <script>
   function myFunction() {
