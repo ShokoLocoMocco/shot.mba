@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+
+
+body {
+  background: #FFFFED;
+}
+
+
+h1 {
+  font-family: 'Galada', cursive;
+  font-size: 2.25rem;
+}
+
+a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+

@@ -575,6 +575,30 @@ header {
     text-decoration: none;
 }
 
+.portfolio-item-one {
+  max-width: 900px;   /* or whatever width matches your site's content column */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.centered-media,
+.centered-media a {
+    display: flex;          /* Enables Flexbox */
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Optional: centers vertically */
+    width: 100%;             /* Ensures it takes full width */
+    margin: 20px 0;          /* Adds some breathing room top/bottom */
+}
+
+
+/* Ensure the contents scale nicely if needed */
+
+.centered-media img { /* 
+    max-width: 600px;  instead of 100% */
+    width: 100%;
+    height: auto;
+}
+
 /* footer */
 
 .footer {

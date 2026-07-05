@@ -1,0 +1,3 @@
+<!-- Google tag (gtag.js) sho-viz --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-KPBT6GQP3Y"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-KPBT6GQP3Y'); </script>
+
+<link rel="icon" href="viz_favicon.png">
